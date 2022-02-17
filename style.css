@@ -101,7 +101,11 @@ body{
     top:0;
     position: fixed;
     background: #1e3d59;
+    overflow-x:scroll;
 
+}
+#Wine::-webkit-scrollbar{
+    display: none;
 }
 
 #Shots {
