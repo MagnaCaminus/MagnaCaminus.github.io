@@ -101,7 +101,7 @@ body{
     top:0;
     position: fixed;
     background: #1e3d59;
-    overflow-x:scroll;
+    overflow-y:scroll;
 
 }
 #Wine::-webkit-scrollbar{
