@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hun">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <title>Nagykohó Itallap</title>
+</head>
+<body>
+<div class="menu">
+    <div id="Beer"> Fehérnyúl sörök
+
+        <script type="text/javascript" charset="utf-8">
+            d3.text("beers.csv", function(data) {
+                var parsedCSV = d3.csv.parseRows(data);
+
+                var container = d3.select("#Beer")
+                    .append("table")
+
+                    .selectAll("tr")
+                    .data(parsedCSV).enter()
+                    .append("tr")
+
+                    .selectAll("td")
+                    .data(function(d) { return d; }).enter()
+                    .append("td")
+                    .text(function(d) { return d; });
+            });
+        </script>
+
+    </div>
+    <div id="Soda"> Üdítők
+
+        <script type="text/javascript" charset="utf-8">
+            d3.text("soda.csv", function(data) {
+                var parsedCSV = d3.csv.parseRows(data);
+
+                var container = d3.select("#Soda")
+                    .append("table")
+
+                    .selectAll("tr")
+                    .data(parsedCSV).enter()
+                    .append("tr")
+
+                    .selectAll("td")
+                    .data(function(d) { return d; }).enter()
+                    .append("td")
+                    .text(function(d) { return d; });
+            });
+        </script>
+
+
+    </div>
+    <div id="Wine">Borválaszték
+
+        <script type="text/javascript" charset="utf-8">
+            d3.text("wine.csv", function(data) {
+                var parsedCSV = d3.csv.parseRows(data);
+
+                var container = d3.select("#Wine")
+                    .append("table")
+
+                    .selectAll("tr")
+                    .data(parsedCSV).enter()
+                    .append("tr")
+
+                    .selectAll("td")
+                    .data(function(d) { return d; }).enter()
+                    .append("td")
+                    .text(function(d) { return d; });
+            });
+        </script>
+
+    </div>
+    <div id="Shots">Röviditalok
+
+        <script type="text/javascript" charset="utf-8">
+            d3.text("shots.csv", function(data) {
+                var parsedCSV = d3.csv.parseRows(data);
+
+                var container = d3.select("#Shots")
+                    .append("table")
+
+                    .selectAll("tr")
+                    .data(parsedCSV).enter()
+                    .append("tr")
+
+                    .selectAll("td")
+                    .data(function(d) { return d; }).enter()
+                    .append("td")
+                    .text(function(d) { return d; });
+            });
+        </script>
+
+
+    </div>
+</div>
+
+<div class="eyes">
+
+    <div class="eye">
+            <div class="ball">
+            </div>
+        </div>
+</div>
+
+    <script>
+            ball = document.getElementsByClassName("ball");
+            document.onmousemove = function () {
+                var x = event.clientX * 100 / window.innerWidth + "%";
+                var y = event.clientY * 100 / window.innerHeight + "%";
+                for(var i =0; i<2;i++){
+                    ball[i].style.left = x;
+                    ball[i].style.top = y;
+                }
+            }
+            document.ontouchmove =  function () {
+                var x = event.clientX * 100 / window.innerWidth + "%";
+                var y = event.clientY * 100 / window.innerHeight + "%";
+                for(var i =0; i<2;i++){
+                    ball[i].style.left = x;
+                    ball[i].style.top = y;
+                }
+
+
+            }
+        </script>
+</body>
+</html>

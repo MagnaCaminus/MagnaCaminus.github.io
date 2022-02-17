@@ -1,0 +1,130 @@
+body{
+    margin:0;
+    padding: 0;
+    background: goldenrod;
+}
+
+
+.eyes{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+
+}
+.arrow-up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0%;
+    height: 0%;
+    border-left: 60px solid black;
+    border-right: 60px solid black;
+    border-bottom: 120px solid saddlebrown;
+
+}
+
+.eye{
+    box-shadow: 3px 3px 5px #000000;
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background: aliceblue;
+    border-radius: 100%;
+    border: 6px inset #905f22;
+    overflow: hidden;
+    -webkit-transform-origin: 50%;
+    -webkit-animation: blink 5s infinite;
+}
+@-webkit-keyframes blink {
+    0%, 100% {
+        transform: scale(1, .05);
+    }
+    5%,
+    95% {
+        transform: scale(1, 1);
+    }
+}
+
+.ball{
+    width: 30px;
+    height: 30px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 5px solid olivedrab;
+}
+
+
+
+#Beer,#Soda,#Wine,#Shots {
+    font-size: xxx-large;
+    color: #f5f0e1;
+    width: 50%;
+    height: 50%;
+    float: left;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+#Beer{
+    border-width: 30px;
+    border-style: solid;
+    border-image: url(border.png) 25 ;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+}
+
+
+#Soda{
+    border: 15px red;
+    border-style: dashed solid;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background: #c63d3d;
+}
+#Wine{
+    border: 20px;
+    border-style: dotted;
+    right: 0;
+    top:0;
+    position: fixed;
+    background: #1e3d59;
+
+}
+
+#Shots {
+    border: 25px solid;
+    border-image: repeating-linear-gradient(45deg, #f33, #3bf, #f33 30px) 60;    right: 0;
+    bottom: 0;
+    position: fixed;
+    background: #37a8a8;
+    overflow-y:scroll;
+}
+#Shots::-webkit-scrollbar {
+    display: none;
+}
+
+
+table {
+    align-content: center;
+    width: 80%;
+    color: #f5f0e1;
+    font-size: 25px;
+}
+
+td {
+
+    padding: 12px;
+}
