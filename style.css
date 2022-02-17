@@ -122,7 +122,7 @@ body{
 
 
 table {
-    align-content: center;
+    align: center;
     width: 80%;
     color: #f5f0e1;
     font-size: 25px;
