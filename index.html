@@ -12,7 +12,7 @@
     <div id="Beer"> Fehérnyúl sörök
 
         <script type="text/javascript" charset="utf-8">
-            d3.text("files/beers.csv", function(data) {
+            d3.text("beers.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data);
 
                 var container = d3.select("#Beer")
@@ -33,7 +33,7 @@
     <div id="Soda"> Üdítők
 
         <script type="text/javascript" charset="utf-8">
-            d3.text("files/soda.csv", function(data) {
+            d3.text("soda.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data);
 
                 var container = d3.select("#Soda")
@@ -55,7 +55,7 @@
     <div id="Wine">Borválaszték
 
         <script type="text/javascript" charset="utf-8">
-            d3.text("files/wine.csv", function(data) {
+            d3.text("wine.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data);
 
                 var container = d3.select("#Wine")
@@ -76,7 +76,7 @@
     <div id="Shots">Röviditalok
 
         <script type="text/javascript" charset="utf-8">
-            d3.text("files/shots.csv", function(data) {
+            d3.text("shots.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data);
 
                 var container = d3.select("#Shots")
