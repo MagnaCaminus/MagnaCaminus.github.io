@@ -12,7 +12,7 @@
     <div id="Beer"> Fehérnyúl sörök
 
         <script type="text/javascript" charset="utf-8">
-            d3.text("beers.csv", function(data) {
+            d3.text("https://raw.githubusercontent.com/MagnaCaminus/MagnaCaminus.github.io/main/beers.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data);
 
                 var container = d3.select("#Beer")
