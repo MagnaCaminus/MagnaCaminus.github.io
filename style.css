@@ -136,3 +136,6 @@ td {
 
     padding: 12px;
 }
+td:first-child{
+    font-weight: bold;
+}
