@@ -34,8 +34,8 @@ body{
     height: 50px;
     background: aliceblue;
     border-radius: 100%;
-    border: 6px inset #905f22;
-    overflow: hidden;
+    border: 3px solid;
+    border-color: #c43d3d #d8a420 #1e3d58 hsl(180, 50%, 44%);    overflow: hidden;
     -webkit-transform-origin: 50%;
     -webkit-animation: blink 5s infinite;
 }
