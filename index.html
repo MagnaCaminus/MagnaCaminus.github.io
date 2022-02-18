@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="menu">
-    <div id="Beer"> Fehérnyúl sörök
+    <div id="Beer"> <h3>Fehérnyúl sörök</h3>
 
         <script type="text/javascript" charset="utf-8">
             d3.text("beers.csv", function(data) {
@@ -30,7 +30,7 @@
         </script>
 
     </div>
-    <div id="Soda"> Üdítők
+    <div id="Soda"> <h3>Üdítők</h3>
 
         <script type="text/javascript" charset="utf-8">
             d3.text("soda.csv", function(data) {
@@ -52,7 +52,7 @@
 
 
     </div>
-    <div id="Wine">Borválaszték
+    <div id="Wine"><h3>Borválaszték</h3>
 
         <script type="text/javascript" charset="utf-8">
             d3.text("wine.csv", function(data) {
@@ -73,7 +73,7 @@
         </script>
 
     </div>
-    <div id="Shots">Röviditalok
+    <div id="Shots"><h3>Röviditalok</h3>
 
         <script type="text/javascript" charset="utf-8">
             d3.text("shots.csv", function(data) {
@@ -116,8 +116,8 @@
                 }
             }
             document.ontouchmove =  function () {
-                var x = event.touches[0].clientX * 100 / window.innerWidth + "%";
-                var y = event.touches[0].clientY * 100 / window.innerHeight + "%";
+                var x = event.clientX * 100 / window.innerWidth + "%";
+                var y = event.clientY * 100 / window.innerHeight + "%";
                 for(var i =0; i<2;i++){
                     ball[i].style.left = x;
                     ball[i].style.top = y;
