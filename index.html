@@ -116,8 +116,8 @@
                 }
             }
             document.ontouchmove =  function () {
-                var x = event.clientX * 100 / window.innerWidth + "%";
-                var y = event.clientY * 100 / window.innerHeight + "%";
+                var x = event.touches[0].clientX * 100 / window.innerWidth + "%";
+                var y = event.touches[0].clientY * 100 / window.innerHeight + "%";
                 for(var i =0; i<2;i++){
                     ball[i].style.left = x;
                     ball[i].style.top = y;
