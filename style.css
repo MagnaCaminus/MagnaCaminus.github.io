@@ -74,6 +74,7 @@ body{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    overflow-y:scroll;
 }
 #Beer{
     border-width: 30px;
@@ -101,11 +102,7 @@ body{
     top:0;
     position: fixed;
     background: #1e3d59;
-    overflow-y:scroll;
 
-}
-#Wine::-webkit-scrollbar{
-    display: none;
 }
 
 #Shots {
@@ -114,24 +111,28 @@ body{
     bottom: 0;
     position: fixed;
     background: #37a8a8;
-    overflow-y:scroll;
+
 }
 #Shots::-webkit-scrollbar {
     display: none;
+}#Beer::-webkit-scrollbar {
+    display: none;
+}#Wine::-webkit-scrollbar {
+    display: none;
+}#Soda::-webkit-scrollbar {
+    display: none;
 }
 
-
 table {
-    align: center;
+    margin: 0 auto;
+    align-content: center;
     width: 80%;
     color: #f5f0e1;
     font-size: 25px;
+    border: 1px solid;
 }
 
 td {
 
-    padding: 6px;
-}
-td:first-child{
-    font-weight: bold;
+    padding: 12px;
 }
