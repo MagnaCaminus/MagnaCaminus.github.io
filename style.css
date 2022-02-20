@@ -79,7 +79,7 @@ body{
 #Beer{
     border-width: 30px;
     border-style: solid;
-    border-image: url(border.png) 25 ;
+    border-image: url(border.png);
     position: fixed;
     left: 0;
     top: 0;
