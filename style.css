@@ -84,7 +84,8 @@ body{
     left: 0;
     top: 0;
     padding: 20px;
-    background-image: url(F61E934A-175D-4EE1-B81D-B03AF58FFD69.jpeg) 0.25;
+    background-image: url(F61E934A-175D-4EE1-B81D-B03AF58FFD69.jpeg);
+    background-size: 25%;
 }
 
 
